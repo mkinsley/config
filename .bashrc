@@ -21,9 +21,11 @@ alias ls='ls -GFh'
 #-----------------------------------------------------------------------------#
 # initial pyenv defaults
 #-----------------------------------------------------------------------------#
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python2"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 pyenv virtualenvwrapper
-
 
 #-----------------------------------------------------------------------------#
 # setup nvm
